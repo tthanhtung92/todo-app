@@ -68,7 +68,7 @@ const Todos = () => {
   return (
     <>
       <AddTodo addTodoFunc={addTodo} />
-      <div className="bg-slate-300 rounded-xl min-w-[800px]">
+      <div className="bg-slate-300 rounded-xl w-10/12">
         {todosState.map((item) => {
           return (
             <TodoItem

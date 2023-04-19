@@ -18,7 +18,7 @@ const TodoItem = (props) => {
         />
         <label
           htmlFor="default-checkbox"
-          className="ml-2 text-lg font-medium text-gray-900 dark:text-gray-700"
+          className="ml-2 text-lg font-medium break-words text-gray-900"
         >
           {todo.title}
         </label>
@@ -26,9 +26,9 @@ const TodoItem = (props) => {
 
       <button
         onClick={deleteTodo.bind(this, todo.id)}
-        className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 m-2 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+        className="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 m-2 text-center"
       >
-        Remove
+        Xóa
       </button>
     </div>
   );
