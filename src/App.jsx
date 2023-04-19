@@ -4,7 +4,7 @@ import Todos from "./components/Todos";
 
 const App = () => {
   return (
-    <main className="h-screen w-screen flex flex-col items-center">
+    <main className="h-screen w-screen flex flex-col items-center mb-16">
       <Header />
       <Todos />
     </main>
