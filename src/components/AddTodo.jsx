@@ -16,8 +16,8 @@ const AddTodo = (props) => {
   };
   return (
     <div className="mb-4 w-10/12">
-      <form onSubmit={addSingleTodo} className="flex justify-between items-end">
-        <div className="w-max h-max">
+      <form onSubmit={addSingleTodo} className="flex justify-between sm:justify-normal items-end">
+        <div className="w-max h-max sm:mr-4">
           <label htmlFor="add_todo" className="block mb-2 text-lg w-max font-medium text-gray-900">
             Thêm việc cần làm
           </label>
