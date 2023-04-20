@@ -15,7 +15,7 @@ const AddTodo = (props) => {
     }
   };
   return (
-    <div className="mb-4 w-10/12">
+    <div className="mb-4 w-10/12 sm:max-w-4xl">
       <form onSubmit={addSingleTodo} className="flex justify-between sm:justify-normal items-end">
         <div className="w-max h-max sm:mr-4">
           <label htmlFor="add_todo" className="block mb-2 text-lg w-max font-medium text-gray-900">
@@ -24,7 +24,7 @@ const AddTodo = (props) => {
           <input
             type="text"
             id="add_todo"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-60 p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-[260px] sm:w-[500px] p-2.5"
             placeholder="Đi chợ, nấu cơm,..."
             onChange={changeTitle}
             value={title}
@@ -33,7 +33,7 @@ const AddTodo = (props) => {
         </div>
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 w-20 h-11 rounded-xl font-medium"
+          className="text-white bg-blue-700 hover:bg-blue-800 w-20 h-[41px] rounded-lg font-medium"
         >
           Thêm
         </button>
